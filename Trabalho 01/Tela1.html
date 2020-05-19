@@ -16,7 +16,6 @@
             width: 100%;
             height: 50px;
             background-color: #92afb5;
-
         }
         .menu ul{
             list-style: none;
@@ -65,6 +64,12 @@
         #bt_menu{
             display: none;
         }
+
+        #img-logo-1{
+        display: block; 
+        height: 60px;
+        margin-bottom: -50px;
+        }
         label[for="bt_menu"]{
             display: none;
         }
@@ -72,6 +77,12 @@
             label[for="bt_menu"]{
                 display: block;
             }
+            #img-logo-1{
+            display: block; 
+            height: 60px;
+             margin-bottom: 0px;
+              }
+
             #bt_menu:checked ~ .menu{
                 margin-left: 0;
             }
@@ -97,12 +108,15 @@
 
         }
 
+   
         
     </style>
 </head>
 <body>
     <input type="checkbox" id="bt_menu">
     <label for="bt_menu" >&#9776;</label>
+  <img id="img-logo-1" src="Imagens/Logo trabalho.png">
+
     <nav class="menu">
         <ul >
            
