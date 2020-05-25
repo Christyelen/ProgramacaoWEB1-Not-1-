@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Principal</title>
+    <title>Eletromésticos</title>
     <style>
         body{
             background-color: #bee4ec;
@@ -82,7 +82,8 @@
             display: block; 
             height: 60px;
              margin-bottom: 0px;
-              }
+             margin-left: 70px;
+            }
 
             #bt_menu:checked ~ .menu{
                 margin-left: 0;
@@ -108,37 +109,47 @@
 
         }
         th:hover {
-    border-style: solid;
-    border-color:lightsalmon ;
-    
-}
-
-
-.tabela{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-.espaco{
-    background-color: peachpuff;
-}
-th{
-    background-color: white;
-    border-collapse: initial;
-    border-radius: 10px;
-
-    
-}
-#rodape {
-	position: relative;
-	bottom: 0;
-    background-color: #92afb5;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-	}
+          border-style: solid;
+          border-color: #92afb5;
+          
+        }
+        .tabela{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .espaco{
+         width: 60px;
+         background-color: #bee4ec;
+         border-color: none;
+        }
+        .espaco:hover{
+            border: none;
+        }
+        .espaco2{
+            height: 30px;
+            background-color: #bee4ec;
+        }
+        th{
+            background-color: white;
+            border-collapse: initial;
+            border-radius: 10px;
+            border-color: #bee4ec;
+            border-style: solid;
+        }
+        #rodape {
+        	position: relative;
+        	bottom: 0;
+            background-color: #92afb5;
+            width: 100%;
+            height: 10%;
+            text-align: center;
+        }
+        a{
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -153,14 +164,15 @@ th{
     <nav class="menu">
         <ul >
            
-            <li><a href="#"> Menu Principal</a>
+            <li><a href="Menu.html"> Menu Principal</a>
                 <ul>
-                    <li><a href="#">Vendas</a></li>
+                    <li><a href="Tela5.html">Vendas</a></li>
                 </ul>
             </li>
-            <li><a href="#">Acessórios</a></li>
-            <li><a href="#"> Móveis</a></li>
-            <li><a href="#">Limpeza</a></li>
+            <li><a href="Tela1.html">Eletromésticos</a></li>
+            <li><a href="Tela2.html"> Móveis</a></li>
+            <li><a href="Tela3.html">Acessórios</a></li>
+            <li><a href="Tela4.html">Limpeza</a></li>
         </ul>
     </nav>
     
@@ -174,9 +186,8 @@ th{
                 <th><img src="Imagens/computador.jpg"height="250" width="250" style="border-radius: 10px;"><legend>Computador</legend></th>
                 <th class="espaco"></th>
                 <th><img src="Imagens/ps4.jpg" height="250" width="250"style="border-radius: 10px;"><legend>Ps4</legend></th>
-               
             </tr>
-       
+            <tr class="espaco2"></tr>
             <tr style="text-align: center;">
                 <th><img src="Imagens/celularImage.jpg" height="250" width="250" style="border-radius: 10px;"><legend>Celular</legend></th>
                 <th class="espaco"></th>
