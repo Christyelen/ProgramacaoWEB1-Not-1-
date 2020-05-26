@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body{
+          margin: 0;
+          padding: 0;
+          background: #bee4ec;
+        }
+        .slidershow{
+          width: 700px;
+          height: 400px;
+          overflow: hidden;
+        }
+        .middle{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+        .navigation{
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+        }
+        .bar{
+          width: 50px;
+          height: 10px;
+          border: 2px solid #fff;
+          margin: 6px;
+          cursor: pointer;
+          transition: 0.4s;
+        }
+        .bar:hover{
+          background: #fff;
+        }
+        
+        input[name="r"]{
+            position: absolute;
+            visibility: hidden;
+        }
+        
+        .slides{
+          width: 500%;
+          height: 100%;
+          display: flex;
+        }
+        
+        .slide{
+          width: 20%;
+          transition: 0.6s;
+        }
+        .slide img{
+          width: 100%;
+          height: 100%;
+        }
+        
+        #r1:checked ~ .s1{
+          margin-left: 0;
+        }
+        #r2:checked ~ .s1{
+          margin-left: -20%;
+        }
+        #r3:checked ~ .s1{
+          margin-left: -40%;
+        }
+        #r4:checked ~ .s1{
+          margin-left: -60%;
+        }
+        #r5:checked ~ .s1{
+          margin-left: -80%;
+        }
+        html{
+        
+         overflow-x:hidden;
+         
+        }
+        input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+div{
+    background-color: #92afb5;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  background-color: #bee4ec;
+}
+
+#tudo {
+	position: relative;
+
+
+	}
+
+    h1{
+    text-align: center;
+}
+
+.container {
+  padding: 16px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            width: 100%;
+            height: 50px;
+            background-color: #92afb5;
+        }
+        .menu ul{
+            list-style: none;
+            position: relative;
+        }
+        .menu ul li{
+            width: 150px;
+            float:right;
+            margin: 0, auto;
+        }
+        .menu a {
+            padding: 15px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background-color: #92afb5;
+        }
+        .menu ul ul{
+            position: absolute;
+            visibility: hidden;
+        }
+        .menu ul li:hover ul{
+            visibility: visible;
+        }
+        .menu a:hover{
+            background-color: #bee4ec;
+        }
+        .menu ul ul li {
+            float: none;
+            border-left: solid 1px #92afb5;
+            border-right: solid 1px #92afb5;
+            border-bottom: solid 1px #92afb5;
+
+        }
+        label[for="bt_menu"]{
+            padding: 5px;
+            background-color: #92afb5;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+
+        }
+
+        #bt_menu{
+            display: none;
+        }
+
+        #img-logo-1{
+        display: block; 
+        height: 60px;
+        margin-bottom: -50px;
+        }
+        label[for="bt_menu"]{
+            display: none;
+        }
+        @media(max-width: 800px){
+            label[for="bt_menu"]{
+                display: block;
+            }
+            #img-logo-1{
+            display: block; 
+            height: 60px;
+             margin-bottom: 0px;
+             margin-left: 70px;
+            }
+
+            #bt_menu:checked ~ .menu{
+                margin-left: 0;
+            }
+            .menu{
+                margin-left: -100%;
+                transition: all .4s;
+            }
+         .menu ul li{
+             width: 100%;
+             float: none;
+         }
+         .menu ul ul{
+             position: static ;
+             overflow: hidden;
+             max-height: 0;
+             transition: all .4s;
+         }
+         .menu ul li:hover ul{
+             height: auto;
+            max-height: 200px;
+         }
+
+        }
+        th:hover {
+          border-style: solid;
+          border-color: #92afb5;
+          
+        }
+        .tabela{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .espaco{
+         width: 60px;
+         background-color: #bee4ec;
+         border-color: none;
+        }
+        .espaco:hover{
+            border: none;
+        }
+        .espaco2{
+            height: 30px;
+            background-color: #bee4ec;
+        }
+        th{
+            background-color: white;
+            border-collapse: initial;
+            border-radius: 10px;
+            border-color: #bee4ec;
+            border-style: solid;
+        }
+        #rodape {
+        	position: relative;
+        	bottom: 0;
+            background-color: #92afb5;
+            width: 100%;
+            height: 10%;
+            text-align: center;
+        }
+        a{
+            color: black;
+        }
+
+     
+    </style>
+</head>
+<body>
+    
+    <header style="background-color: #92afb5;">  
+      
+        <img id="img-logo-1"  src="Imagens/Logo trabalho.png">
+    </header>
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu" >&#9776;</label>
+
+    <nav class="menu">
+        <ul >
+           
+            <li><a href="Menu.html"> Menu Principal</a>
+                <ul>
+                    <li><a href="Tela5.html">Vendas</a></li>
+                </ul>
+            </li>
+            <li><a href="Tela1.html">Eletromésticos</a></li>
+            <li><a href="Tela2.html"> Móveis</a></li>
+            <li><a href="Tela3.html">Acessórios</a></li>
+            <li><a href="Tela4.html">Limpeza</a></li>
+        </ul>
+    </nav>
+    
+    <div class="slidershow middle" style="width: 90%; margin-top: 10px;  display: block;" >
+
+        <div class="slides">
+          <input type="radio" name="r" id="r1" checked>
+          <input type="radio" name="r" id="r2">
+          <input type="radio" name="r" id="r3">
+          <input type="radio" name="r" id="r4">
+          <input type="radio" name="r" id="r5">
+          <div class="slide s1">
+            <img src="Imagens/1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="Imagens/2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="Imagens/3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="Imagens/4.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="Imagens/5.jpg" alt="">
+          </div>
+        </div>
+    
+        <div class="navigation">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+          <label for="r3" class="bar"></label>
+          <label for="r4" class="bar"></label>
+          <label for="r5" class="bar"></label>
+        </div>
+    </div>
+    
+    <div class="container" style="width: 40%; margin-top:40% ;margin-bottom: 7%; float: left; margin-left: 7%;">
+        <label for="uname"><b>Nome</b></label>
+        <br>
+        <input style="width: 90%;"  type="text" placeholder="Insira o nome" name="uname" required>
+        <br>
+        <label for="uname"><b>Sobrenome</b></label>
+        <br>
+        <input style="width: 90%;" type="text" placeholder="Insira o sobrenome" name="uname" required>
+        <br>
+        <label for="uname"><b>Email</b></label>
+        <br>
+        <input style="width: 90%;"type="text" placeholder="Insira o email" name="uname" required>
+        <br>
+        <label for="uname"><b>Telefone</b></label>
+        <input style="width: 90%;" type="text" placeholder="Insira o Telefone" name="uname" required>
+    
+    </div>
+    <div class="container" style="width: 40%; margin-top: 40%;margin-bottom: 7%; float: right; margin-right: 7%;">
+        <label><b>Deseja receber atualizações?</b></label>
+        <br>
+    
+        <label for="uname"><b>Sim</b></label>
+        <input type="checkbox"  name="uname" required >
+        <label for="uname"><b>Não</b></label>
+        <input type="checkbox"  name="uname" required >
+        <br>
+        <br>
+        <label for="uname"><b>Mensagem</b></label>
+        <br>
+        <input style="width: 90%; height: 140px;"type="text" placeholder="Insira a Mensagem"  name="uname" required>
+        <br>
+        <button style="width:96%;"type="submit">Concluido</button>
+    </div>
+    
+
+<footer id="rodape" style="margin-top: 50px;">
+    <p style="margin-top: 15px; ">Papun<br>Christyelen Kramel e Vinicius Pereira Forte - 2020</p>
+</footer>
+
+</body>
+</body>
+</html>
