@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+debugger;
+ function PegarValorCombo() {
+  var nome = document.getElementById('txtNome').value;
+  var tipo = document.getElementById('cb').value;
+  if(nome && tipo){
+      console.log(nome);
+      console.log(tipo);
+      var cb = document.getElementById("cb");
+      var selectedText = cb.options[tipo].text;
+      var html = '<td>' + nome + '</td><td>' + selectedText + '</td>';
+      var tabela = document.getElementById('resultado');
+      tabela.insertAdjacentHTML('beforeend', html);
+  }
+  
+}
+</script>
+
+</head>
+<body>
+    <div class="modal-content" id="cadastro-tarefa">
+        <label class="" for="orderBy">Nome</label>
+          <input id="txtNome" class="form-control" type="text" placeholder="">
+          <div class="form-group">
+          <label class="" for="orderBy">Tipo</label>
+            <select class="form-control cb" id="cb" name="meucombo">
+              <option value="" disabled selected>Selecione</option>
+              <option value="1">Pergunta e Resposta</option>
+              <option value="2">Multipla Escolha</option>
+              <option value="3">Grade de Multipla Escolha</option>
+            </select>
+          </div>
+          <br>
+          <button id="btSalvar" onclick="PegarValorCombo()">Salvar</button>
+        </div>
+        
+        <table id="resultado">
+        <th width="60px">Nome</th>
+        <th width="160px">Tipo</th>
+        </table>
+</body>
+</html>

@@ -100,6 +100,9 @@ label[for="bt_menu"]{
     max-height: 200px;
  }
 
+ .espacoMobile{
+    overflow-wrap: break-word;
+ }
 }
 th:hover {
   border-style: solid;

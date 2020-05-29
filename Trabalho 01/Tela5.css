@@ -74,8 +74,25 @@ label[for="bt_menu"]{
      width: 40%; 
      margin-right: 50px; 
      margin-bottom: 10px;
-      margin-top: 50px;
+    margin-top: 50px;
 }
+
+button {
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+ 
+  
+  }
+  
+  button:hover {
+    background-color: #92afb5;
+  }
 
 .tabela1{
     margin-top: 50px; 

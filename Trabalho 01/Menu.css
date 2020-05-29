@@ -51,11 +51,24 @@ h1{
 }
 
 .container {
+  width: 40%; 
   padding: 16px;
-  margin-bottom: 50px;
+  margin-bottom: 10%;
   margin-top: 10px;
+  float: left;
+  margin-left: 7%;
 }
  
+
+.container2{
+  width: 40%; 
+  padding: 16px;
+  margin-bottom: 10%;
+  margin-top: 10px;
+  float: right;
+  margin-right: 7%;
+}
+
 #img-logo-1{
   display: block; 
   height: 52px;
@@ -228,19 +241,33 @@ overflow-x:hidden;
         margin-left: -100%;
         transition: all .4s;
     }
- .menu ul li{
-     width: 100%;
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul{
+        position: static ;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+       max-height: 200px;
+    }
+    .container {
+     width: 100%; 
      float: none;
- }
- .menu ul ul{
-     position: static ;
-     overflow: hidden;
-     max-height: 0;
-     transition: all .4s;
- }
- .menu ul li:hover ul{
-     height: auto;
-    max-height: 200px;
- }
-
-}
+     margin-top:  50px; 
+     padding: 16px;
+     margin-bottom: 10%;
+     margin-top: 30%;
+    }
+    
+    .container2 {
+      width: 100%; 
+      margin-top:60% ; 
+      margin-bottom: 10%;
+      margin-top: 30%;
+    }
+    }
