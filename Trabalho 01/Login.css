@@ -67,14 +67,18 @@
   .container {
     padding: 16px;
   }
-  
-  @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-      width: 100%;
-    }
+
+
+  .modal{
+    width: 40%; float:right; margin-right:40px;margin-bottom: 110px; margin-top:50px;
   }
+
+  .modal0{
+    width: 40%; float: left;margin-right: 10px; margin-left: 40px; margin-top: 50px
+  }
+ 
   #img-logo-1{
     display: block; 
     height: 52px;
     margin-left: 10px;
-          }
+  }

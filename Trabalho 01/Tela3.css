@@ -99,6 +99,10 @@ label[for="bt_menu"]{
      height: auto;
     max-height: 200px;
  }
+ .tabela tr{ 
+    display: flex;
+    flex-direction: column;
+ }
 
 }
 th:hover {
