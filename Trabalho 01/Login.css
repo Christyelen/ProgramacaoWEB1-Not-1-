@@ -70,11 +70,15 @@
 
 
   .modal{
-    width: 40%; float:right; margin-right:40px;margin-bottom: 110px; margin-top:50px;
+    width: 40%; float:right; margin-right:40px;margin-bottom: 110px; margin-top:50px; 
   }
 
+  h1{
+    font-size: 20px;
+  }
   .modal0{
-    width: 40%; float: left;margin-right: 10px; margin-left: 40px; margin-top: 50px
+    
+    width: 40%; float: left;margin-right: 10px; margin-left: 40px; margin-top: 50px; 
   }
  
   #img-logo-1{
