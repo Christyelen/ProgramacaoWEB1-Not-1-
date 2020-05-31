@@ -1,48 +1,82 @@
+var totalCompra = 0;
+var linhasTabela = 0;
+
 function PegarValorCombo(nomeCombo) {
   debugger;
   var input;
   if(nomeCombo == 'eletro'){
-    input= document.getElementById('txtQuant');
+    input= document.getElementById('txtQuant').value;
   }
   if(nomeCombo == 'moveis'){
-    input= document.getElementById('txtQuant2');
+    input= document.getElementById('txtQuant2').value;
   }
   if(nomeCombo == 'acessorios'){
-    input= document.getElementById('txtQuant3');
+    input= document.getElementById('txtQuant3').value;
   }
   if(nomeCombo == 'limpeza'){
-    input= document.getElementById('txtQuant4');
+    input= document.getElementById('txtQuant4').value;
   }
-    var valorTexto = input.value;
+    var valorTexto = parseFloat(input);
     var tipo = document.getElementById(nomeCombo).value;
     if(valorTexto && tipo){
       var cb = document.getElementById(nomeCombo)
         var objeto = cb.options[tipo].text;
-
+        var valorItem =  adicionarValor(nomeCombo);
+        var valorTotal = valorItem * valorTexto;
+        totalCompra += valorTotal;
         var margem = document.createElement('tr');
         var linha = document.createElement('td');
+        linha.setAttribute("id", "tabela");
         var linha2 = document.createElement('td');
-        var margem2 = document.createElement('tr');
-        var div = document.getElementById('resultado');
-        linha.innerHTML = valorTexto;
-        linha2.innerHTML = objeto;
-        console.log(valorTexto);
-        console.log(objeto)
+        linha2.setAttribute("id", "tabela");
+        var linha3 = document.createElement('td');
+        linha3.setAttribute("id", "tabela");
+        var div = document.getElementById('resultado', id='tabela');
+        linha.innerHTML = objeto;
+        linha2.innerHTML = valorTexto;
+        linha3.innerHTML = valorTotal;
      div.appendChild(margem);  
      div.appendChild(linha);  
-     div.appendChild(linha2);   
+     div.appendChild(linha2);  
+     div.appendChild(linha3) 
      div.appendChild(margem);   
-
+        linhasTabela +=3;
+     somarValores();
     }
-
-    var valor = adicionarValor(nomeCombo);
-    document.getElementById('preco').text;
   }
 
-  function salvarValor(total){
+  function somarValores(){
     debugger;
-    var valorTotal =+ total;
+    var frete= 0;
+    if(totalCompra < 2000){
+      frete = 30;
+    }
+    else if(totalCompra >= 2000){
+      frete = 50;
+    }
+    document.getElementById('frete').value = frete;
+ 
+    document.getElementById('total').value = totalCompra + frete;
   }
+
+  function realizarCompra(){
+    debugger;
+    document.getElementById('frete').value = "";
+    document.getElementById('total').value = "";
+    document.getElementById('eletro').value= "";
+    document.getElementById('moveis').value= "";
+    document.getElementById('acessorios').value= "";
+    document.getElementById('limpeza').value= "";
+    document.getElementById('txtQuant').value = "";
+    document.getElementById('txtQuant4').value = "";
+    document.getElementById('txtQuant2').value = "";
+    document.getElementById('txtQuant3').value = "";
+     while(linhasTabela > 0){
+      document.getElementById('tabela').remove('td');
+     }
+    console.log("compra concluida com sucesso");
+
+  } 
 
   function adicionarValor(nomeCombo){
     debugger;
@@ -121,6 +155,7 @@ function PegarValorCombo(nomeCombo) {
     valor = 5;
   else if(tipo == 8)
     valor = 12;
-    return valor;
   }
+  return valor;
+
   }

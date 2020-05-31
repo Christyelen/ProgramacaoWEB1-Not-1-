@@ -39,7 +39,6 @@
     <br>
             <select id="eletro" name="eletro">
               <option value="" disabled selected>Selecione</option>
-
               <option value="1" >Fogão</option>
               <option value="2">Microondas</option>
               <option value="3">Liquidificador</option>
@@ -51,7 +50,7 @@
 
 
             </select>
-          <input id="txtQuant" class="form-control" type="text" placeholder="" style="margin-left: 10%; width: 50px;">
+          <input id="txtQuant" class="form-control" type="number" placeholder="" style="margin-left: 10%; width: 50px;">
           <br>
           <button id="btSalvar" onclick="PegarValorCombo('eletro')" style="float: left; margin-left: 50px;">Salvar</button>
           <br>
@@ -73,7 +72,7 @@
           <option value="7">Audi</option>
           <option value="8">Audi</option>
         </select>
-     <input id="txtQuant2" class="form-control" type="text" placeholder="" style="margin-left: 10%; width: 50px;">
+     <input id="txtQuant2" class="form-control" type="number" placeholder="" style="margin-left: 10%; width: 50px;">
      <br> 
      <button id="btSalvar2" onclick="PegarValorCombo('moveis')"  style="float: left; margin-left: 50px;">Salvar</button>
      <br>
@@ -94,7 +93,7 @@
           <option value="7">Jarra</option>
           <option value="8">Vaso</option>
         </select>
-        <input id="txtQuant3" class="form-control" type="text" placeholder="" style=" margin-left: 10%; width: 50px;" >
+        <input id="txtQuant3" class="form-control" type="number" placeholder="" style=" margin-left: 10%; width: 50px;" >
         <br>
         <button id="btSalvar3" onclick="PegarValorCombo('acessorios')"  style="float: left; margin-left: 50px;">Salvar</button>
         <br>
@@ -111,10 +110,10 @@
           <option value="4">Omo</option>
           <option value="5">Pato</option>
           <option value="6">Cif</option>
-          <option value="7">Fiat</option>
-          <option value="8">Audi</option>
+          <option value="7">Casa</option>
+          <option value="8">Destac</option>
         </select>
-        <input id="txtQuant4" class="form-control" type="text" placeholder="" style="margin-left: 10%; width: 50px;">
+        <input id="txtQuant4" class="form-control" type="number" placeholder="" style="margin-left: 10%; width: 50px;">
         <br>
         <button id="btSalvar4" onclick="PegarValorCombo('limpeza')"  style="float: left; margin-left: 50px;">Salvar</button>
         <br>
@@ -122,26 +121,26 @@
 </div>
     
 <table id="resultado" class="tabela">
-    <th >Quantidade</th>
     <th >Selecionados</th>
+    <th >Quantidade</th>
+    <th >Valor</th>
+
 
     </table>
 
 
 
 <div  style="width: 100%; float: left;margin-top:50px ;  margin-left: 50px">
- <label style="margin-left: 0;" for="preco">Preço</label>
+ <label style="margin-left: 0;" for="frete">Frete</label>
  <br>
- <input  style="margin-bottom: 10px; text-align: left;" id="preco" readonly=true; type="text">
+ <input  style="margin-bottom: 10px;" id="frete" readonly="true" type="text">
  <br>
- <label style="margin-left: 0;" for="preco">Frete</label>
+ <label style="margin-left: 0;" for="total">Total</label>
  <br>
- <input  style="margin-bottom: 10px;" id="frete" type="text">
+ <input  style="margin-bottom: 10px;" name="total" id="total" readonly="true" type="text">
  <br>
- <label style="margin-left: 0;" for="preco">Total</label>
- <br>
- <input  style="margin-bottom: 10px;"  id="total" type="text">
- <br>
+ <button id="btCompra" onclick="realizarCompra()">Comprar</button>
+
 </div>
 
 </body>
