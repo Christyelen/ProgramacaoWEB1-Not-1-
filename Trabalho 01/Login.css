@@ -13,7 +13,8 @@
     padding: 10px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: none;
+    border: 0.5px solid rgba(0,0,0,0.15);
+    border-radius: 0.3125em;
     background: #f1f1f1;
   }
   div{
@@ -35,7 +36,8 @@
     color: black;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    border: 0.5px solid rgba(0,0,0,0.15);
+    border-radius: 0.3125em;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
@@ -71,6 +73,7 @@
 
   .modal{
     width: 40%; float:right; margin-right:40px;margin-bottom: 110px; margin-top:50px; 
+    border-radius: 0.3125em;
   }
 
   h1{
