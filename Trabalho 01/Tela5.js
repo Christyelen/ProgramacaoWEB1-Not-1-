@@ -52,75 +52,75 @@ function PegarValorCombo(nomeCombo) {
         var valor;
     if(nomeCombo == 'eletro'){
       if(tipo == 1)
-        valor = 800;
+        valor = 450;
       else if(tipo == 2)
-        valor = 800;
+        valor = 400;
       else if(tipo == 3)
-        valor = 800;
+        valor = 300;
       else if(tipo == 4)
-        valor = 800;
+        valor = 1900;
       else if(tipo == 5)
-        valor = 800;
+        valor = 100;
       else if(tipo == 6)
-        valor = 800;
+        valor = 2000;
       else if(tipo == 7)
-        valor = 800;
+        valor = 1500;
       else if(tipo == 8)
-        valor = 800;
+        valor = 1500;
     }
     else if(nomeCombo == 'moveis'){
-      if(objeto == "Fogão")
-      valor = 800;
-    else if(objeto == "Microondas")
-      valor = 800;
-    else if(objeto == "Liquidificador")
-      valor = 800;
-    else if(objeto == "Geladeira")
-      valor = 800;
-    else if(objeto == "Ventilador")
-      valor = 800;
-    else if(objeto == "Televisão")
-      valor = 800;
-    else if(objeto == "Computador")
-      valor = 800;
-    else if(objeto == "Caixa de som")
-      valor = 800;
+      if(tipo == 1)
+        valor = 650;
+      else if(tipo == 2)
+        valor = 600;
+      else if(tipo == 3)
+        valor = 100;
+      else if(tipo == 4)
+        valor = 1200;
+      else if(tipo == 5)
+        valor = 200;
+      else if(tipo == 6)
+        valor = 1500;
+      else if(tipo == 7)
+        valor = 180;
+      else if(tipo == 8)
+        valor = 600;
     }
    else if(nomeCombo == 'acessorios'){
-      if(objeto == "Fogão")
-      valor = 800;
-    else if(objeto == "Microondas")
-      valor = 800;
-    else if(objeto == "Liquidificador")
-      valor = 800;
-    else if(objeto == "Geladeira")
-      valor = 800;
-    else if(objeto == "Ventilador")
-      valor = 800;
-    else if(objeto == "Televisão")
-      valor = 800;
-    else if(objeto == "Computador")
-      valor = 800;
-    else if(objeto == "Caixa de som")
-      valor = 800;
-    }
-   else if(nomeCombo == 'limpeza'){
-      if(objeto == "Fogão")
-      valor = 800;
-    else if(objeto == "Microondas")
-      valor = 800;
-    else if(objeto == "Liquidificador")
-      valor = 800;
-    else if(objeto == "Geladeira")
-      valor = 800;
-    else if(objeto == "Ventilador")
-      valor = 800;
-    else if(objeto == "Televisão")
-      valor = 800;
-    else if(objeto == "Computador")
-      valor = 800;
-    else if(objeto == "Caixa de som")
-      valor = 800;
-    }
+    if(tipo == 1)
+    valor = 100;
+  else if(tipo == 2)
+    valor = 200;
+  else if(tipo == 3)
+    valor = 100;
+  else if(tipo == 4)
+    valor = 150;
+  else if(tipo == 5)
+    valor = 30;
+  else if(tipo == 6)
+    valor = 70;
+  else if(tipo == 7)
+    valor = 15;
+  else if(tipo == 8)
+    valor = 40;
+   }
+  else if(nomeCombo == 'limpeza'){
+    if(tipo == 1)
+    valor = 10;
+  else if(tipo == 2)
+    valor = 7;
+  else if(tipo == 3)
+    valor = 300;
+  else if(tipo == 4)
+    valor = 40;
+  else if(tipo == 5)
+    valor = 12;
+  else if(tipo == 6)
+    valor = 5;
+  else if(tipo == 7)
+    valor = 5;
+  else if(tipo == 8)
+    valor = 12;
     return valor;
+  }
   }

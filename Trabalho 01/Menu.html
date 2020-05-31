@@ -53,16 +53,19 @@
 <div class="container2" style="margin-top: 5%;">
     <label><b>Deseja receber atualizações?</b></label>
     <br>
-
+    <div class="check" style="width: 20%; float: left;">
     <label for="uname"><b>Sim</b></label>
-    <input type="checkbox" name="uname" required >
+    <input  type="checkbox" name="uname" required >
+  </div>
+  <div class="check" style="width: 20%; float: right;">
+
     <label for="uname"><b>Não</b></label>
-    <input type="checkbox"  name="uname" required >
+    <input type="checkbox" name="uname" required checked >
+  </div>
     <br>
+    <label style="float: left;" for="uname"><b>Mensagem</b></label>
     <br>
-    <label for="uname"><b>Mensagem</b></label>
-    <br>
-    <input style="width: 90%; height: 140px;"type="text" placeholder="Insira a Mensagem"  name="uname" required>
+    <textarea class="area" cols="50" placeholder="Insira a Mensagem"  name="uname" required></textarea>
     <br>
     <button style="width:96%;"type="submit">Concluido</button>
 </div>

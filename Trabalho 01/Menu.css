@@ -129,6 +129,11 @@ label[for="bt_menu"]{
     display: none;
 
 }
+.area{
+ width: 95%;
+  height: 175px;
+   font-family: Georgia;
+}
 #bt_menu{
     display: none;
 }
@@ -262,17 +267,23 @@ overflow-x:hidden;
     .container {
       display: flex;
       flex-direction: column;
+      width: 30%;
+      margin-top: 10px;
+
     }
     
     .container2 {
       display: flex;
       flex-direction: column;
+      width: 30%;
+      margin-top: 10px;
+
     }
 
     .slidershow{
-      margin-top: 80%;
+      margin-top: 130%;
       width: 80%; 
-      margin-bottom: 5%; 
+      margin-bottom: 15%; 
       display: block;
       width: 700px;
       height: 400px;
@@ -280,9 +291,9 @@ overflow-x:hidden;
       
     }
     .middle{
-      margin-top: 80%;
+      margin-top: 130%;
       width: 80%;
-      margin-bottom: 5%;
+      margin-bottom: 15%;
       display: block;
       position: absolute;
       top: 50%;
@@ -290,4 +301,15 @@ overflow-x:hidden;
       transform: translate(-50%,-50%);
     }
     
+    .area{
+      width: 95%;
+       height: 200px;
+        font-family: Georgia;
+     }
+
+     .check{
+       display: flex;
+      flex-direction: row;
+
+     }
     }
