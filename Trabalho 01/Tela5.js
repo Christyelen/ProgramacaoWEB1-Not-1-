@@ -16,8 +16,22 @@ function PegarValorCombo(nomeCombo) {
   if(nomeCombo == 'limpeza'){
     input= document.getElementById('txtQuant4').value;
   }
+  if(input == ""){
+  alert("Adicione a quantidade desejada");
+  return;
+     } else if(input <0){
+      alert("Não são permitidos números negativos");
+      return;
+     }
     var valorTexto = parseFloat(input);
+    
     var tipo = document.getElementById(nomeCombo).value;
+
+    if(tipo == ""){
+      alert("Adicione um produto");
+      return;
+    }
+
     if(valorTexto && tipo){
       var cb = document.getElementById(nomeCombo)
         var objeto = cb.options[tipo].text;
@@ -55,7 +69,6 @@ function PegarValorCombo(nomeCombo) {
       frete = 50;
     }
     document.getElementById('frete').value = frete;
- 
     document.getElementById('total').value = totalCompra + frete;
   }
 
