@@ -81,6 +81,7 @@ function PegarValorCombo(nomeCombo) {
     document.getElementById('txtQuant4').value = "";
     document.getElementById('txtQuant2').value = "";
     document.getElementById('txtQuant3').value = "";
+    totalCompra = 0;
     for(var i = 0; i < linhasTabela; i++){
        document.getElementById('tabela').remove('td');
     }
@@ -169,8 +170,21 @@ function PegarValorCombo(nomeCombo) {
   }
 
   function limpar(){
-    document.getElementById('tabela').remove('td');
-    document.getElementById('tabela').remove('td');
-    document.getElementById('tabela').remove('td');
+    
+    document.getElementById('frete').value = "";
+    document.getElementById('total').value = "";
+    document.getElementById('eletro').value= "";
+    document.getElementById('moveis').value= "";
+    document.getElementById('acessorios').value= "";
+    document.getElementById('limpeza').value= "";
+    document.getElementById('txtQuant').value = "";
+    document.getElementById('txtQuant4').value = "";
+    document.getElementById('txtQuant2').value = "";
+    document.getElementById('txtQuant3').value = "";
+    for(var i = 0; i < linhasTabela; i++){
+      document.getElementById('tabela').remove('td');
+   }
+    totalCompra = 0;
+    frete = 0;
 
   }
