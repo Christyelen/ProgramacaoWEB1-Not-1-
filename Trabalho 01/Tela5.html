@@ -13,7 +13,7 @@
   <div style="background-color: #92afb5;">
     <img class="logo" id="img-logo-1" src="Imagens/Logo trabalho.png">
     <div style="background-color: #92afb5; height: 60px;">
-      <label for="bt_menu">&#9776;</label>
+      <label for="bt_menu" style="margin-left: 10px;">&#9776;</label>
       <input type="checkbox" id="bt_menu">
 
       <nav class="menu">
@@ -117,14 +117,17 @@
       </select>
       <input id="txtQuant4" class="form-control" type="number" placeholder="" style="margin-left: 10%; width: 50px;">
       <br>
-      <button id="btSalvar4" onclick="PegarValorCombo('limpeza')"
-        style="float: left; margin-left: 50px;">Salvar</button>
+      <button id="btSalvar4" onclick="PegarValorCombo('limpeza')"style="float: left; margin-left: 50px;">Salvar</button>
+      <br>
+      <br>
+      <button id="limpar" onclick="limpar()"style="float: left; margin-top: 20px; margin-left: 50px; width: 250px;">Limpar último produto selecionado</button>
+
       <br>
     </div>
   </div>
 
   <table id="resultado" class="tabela">
-    <th>Selecionados</th>
+    <th>Produto</th>
     <th>Quantidade</th>
     <th>Valor</th>
 

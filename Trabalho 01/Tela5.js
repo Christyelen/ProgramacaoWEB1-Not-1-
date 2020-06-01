@@ -2,7 +2,6 @@ var totalCompra = 0;
 var linhasTabela = 0;
 
 function PegarValorCombo(nomeCombo) {
-  debugger;
   var input;
   if(nomeCombo == 'eletro'){
     input= document.getElementById('txtQuant').value;
@@ -60,7 +59,6 @@ function PegarValorCombo(nomeCombo) {
   }
 
   function somarValores(){
-    debugger;
     var frete= 0;
     if(totalCompra < 2000){
       frete = 30;
@@ -73,7 +71,6 @@ function PegarValorCombo(nomeCombo) {
   }
 
   function realizarCompra(){
-    debugger;
     document.getElementById('frete').value = "";
     document.getElementById('total').value = "";
     document.getElementById('eletro').value= "";
@@ -84,15 +81,13 @@ function PegarValorCombo(nomeCombo) {
     document.getElementById('txtQuant4').value = "";
     document.getElementById('txtQuant2').value = "";
     document.getElementById('txtQuant3').value = "";
-     while(linhasTabela > 0){
-      document.getElementById('tabela').remove('td');
-     }
-    console.log("compra concluida com sucesso");
-
+    for(var i = 0; i < linhasTabela; i++){
+       document.getElementById('tabela').remove('td');
+    }
+     return alert("Compra concluida com sucesso");
   } 
 
   function adicionarValor(nomeCombo){
-    debugger;
     var tipo = document.getElementById(nomeCombo).value;
     var cb = document.getElementById(nomeCombo)
         var objeto = cb.options[tipo].text;
@@ -170,5 +165,12 @@ function PegarValorCombo(nomeCombo) {
     valor = 12;
   }
   return valor;
+
+  }
+
+  function limpar(){
+    document.getElementById('tabela').remove('td');
+    document.getElementById('tabela').remove('td');
+    document.getElementById('tabela').remove('td');
 
   }

@@ -62,7 +62,7 @@ label[for="bt_menu"]{
 
 #img-logo-1{
 display: block; 
-height: 52px;
+height: 60px;
 margin-bottom: -50px;
 margin-left: 10px;
 }
@@ -186,7 +186,7 @@ border: none;
     #img-logo-1{
     display: block; 
     height: 60px;
-     margin-bottom: 0px;
+    margin-bottom: 0px;
     }
     .logo{
         float: right;
@@ -194,6 +194,7 @@ border: none;
 
     #bt_menu:checked ~ .menu{
         margin-left: 0;
+        margin-top: 0;
     }
     .menu{
         margin-left: -100%;
@@ -210,14 +211,10 @@ border: none;
         transition: all .4s;
     }
     .menu ul li:hover ul{
-        height: auto;
+       height: auto;
        max-height: 200px;
     }
-    .tabela tr{ 
-       display: flex;
-       flex-direction: column;
-    }
-
+    
     .tabela{
      float: center;
      width:80%;
