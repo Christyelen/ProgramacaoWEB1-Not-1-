@@ -11,8 +11,7 @@ function validacaoEmail(field) {
         (dominio.search(".")!=-1) &&      
         (dominio.indexOf(".") >=1)&& 
         (dominio.lastIndexOf(".") < dominio.length - 1)) {
-    document.getElementById("msgemail").innerHTML="E-mail válido";
-    alert("E-mail valido");
+    /*document.getElementById("msgemail").innerHTML="E-mail válido";*/
     }
     else{
     document.getElementById("msgemail").innerHTML="<font color='red'>E-mail inválido </font>";
@@ -21,18 +20,30 @@ function validacaoEmail(field) {
 }
 
 function validacaoNome(name){
-    if(name < 3){
-        document.getElementById("msgnome").innerHTML="Nome inválido";
-    alert("Nome incorreto!");
+    if((name.value.length >= 2) &&
+    (name.value.search(".") == -1)&&
+    (name.value.search("*") == -1)&&
+    (name.value.search("/") == -1)&&
+    (name.value.search("-") == -1)&&
+    (name.value.search("+") == -1)&&
+    (name.value.search("-") == -1)&&
+    (name.value.search("!") == -1)&&
+    (name.value.search("$") == -1)&&
+    (name.value.search("#") == -1)){
+        /*document.getElementById("msgte").innerHTML="Nome inválido";*/
+        alert("Nome inválido!");
     }
 }
 
 function validacaoTelefone(telefone){
-    if(telefone.length == 10){
-    telefoneParentese = "(" + telefone.value.substring(0,1) + ")" + telefone.value.substring(2,10);
+    if((telefone.value.length <= 10) &&
+    (telefone.value.length >= 14))
+    {
+    telefoneParentese = "(" + telefone.value.substring(0,2) + ")" + telefone.value.substring(2);
     document.getElementById("msgtelefone").innerHTML="Telefone correto";
     document.getElementById("tel").innerHTML=telefoneParentese;
     }else{
         document.getElementById("msgtelefone").innerHTML="<font color='red'>Telefone incorreto </font>";
+        alert("E-mail invalido");
     }
 }
