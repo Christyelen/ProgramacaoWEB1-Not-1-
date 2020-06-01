@@ -232,19 +232,18 @@ html{
 overflow-x:hidden;
 
 }
-@media screen and (max-width: 300px) {
-   .cancelbtn, .signupbtn {
-     width: 100%;
-   }
- }
 
+
+.logo{
+  float: left;
+}
 @media(max-width: 500px){
     label[for="bt_menu"]{
         display: block;
     }
     #img-logo-1{
     display: block; 
-    height: 50px;
+    height: 60px;
      margin-bottom: 0px;
      margin-left: 70px;
     }
@@ -283,7 +282,6 @@ overflow-x:hidden;
       flex-direction: column;
       width: 30%;
       margin-top: 10px;
-
     }
 
     .slidershow{
@@ -318,4 +316,9 @@ overflow-x:hidden;
       flex-direction: row;
 
      }
+     .logo{
+      float: right;
+  }
     }
+
+  

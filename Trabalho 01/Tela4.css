@@ -68,6 +68,7 @@ th:hover {
 }
 .tabela{
     display: flex;
+    margin-top: 50px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -113,6 +114,11 @@ margin-left: 10px;
 label[for="bt_menu"]{
     display: none;
 }
+.logo{
+    float: left;
+}
+
+
 @media(max-width: 500px){
     label[for="bt_menu"]{
         display: block;
@@ -121,7 +127,10 @@ label[for="bt_menu"]{
     display: block; 
     height: 60px;
      margin-bottom: 0px;
-      }
+    }
+      .logo{
+        float: right;
+    }
 
     #bt_menu:checked ~ .menu{
         margin-left: 0;
@@ -145,13 +154,8 @@ label[for="bt_menu"]{
        max-height: 200px;
     }
    
-    .espacoMobile{
-       overflow-wrap: break-word;
-    }
-    
     .tabela tr{ 
        display: flex;
        flex-direction: column;
     }
-
 }

@@ -61,53 +61,18 @@ label[for="bt_menu"]{
 
 #img-logo-1{
 display: block; 
-height: 52px;
+height: 60px;
 margin-bottom: -50px;
 margin-left: 10px;
 }
 label[for="bt_menu"]{
     display: none;
 }
-@media(max-width: 500px){
-    label[for="bt_menu"]{
-        display: block;
-    }
-    #img-logo-1{
-    display: block; 
-    height: 50px;
-     margin-bottom: 0px;
-     margin-left: 70px;
-    }
 
-    #bt_menu:checked ~ .menu{
-        margin-left: 0;
-    }
-    .menu{
-        margin-left: -100%;
-        transition: all .4s;
-    }
- .menu ul li{
-     width: 100%;
-     float: none;
- }
- .menu ul ul{
-     position: static ;
-     overflow: hidden;
-     max-height: 0;
-     transition: all .4s;
- }
- .menu ul li:hover ul{
-     height: auto;
-    max-height: 200px;
- }
 
- .tabela tr{ 
-    display: flex;
-    flex-direction: column;
- }
-
+.logo{
+    float: left;
 }
-
 
 th:hover {
   border-style: solid;
@@ -152,3 +117,46 @@ a{
     color: black;
 }
 
+
+@media(max-width: 500px){
+    label[for="bt_menu"]{
+        display: block;
+    }
+    #img-logo-1{
+    display: block; 
+    height: 60px;
+     margin-bottom: 0px;
+     margin-left: 70px;
+    }
+
+    #bt_menu:checked ~ .menu{
+        margin-left: 0;
+    }
+    .menu{
+        margin-left: -100%;
+        transition: all .4s;
+    }
+ .menu ul li{
+     width: 100%;
+     float: none;
+ }
+ .menu ul ul{
+     position: static ;
+     overflow: hidden;
+     max-height: 0;
+     transition: all .4s;
+ }
+ .menu ul li:hover ul{
+     height: auto;
+    max-height: 200px;
+ }
+
+ .tabela tr{ 
+    display: flex;
+    flex-direction: column;
+ }
+
+ .logo{
+    float: right;
+}
+}
