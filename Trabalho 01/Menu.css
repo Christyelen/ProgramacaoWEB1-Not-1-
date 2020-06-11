@@ -4,6 +4,7 @@ input[type=text] {
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
+    border-radius: 0.3125em;
     background: #f1f1f1;
 }
 
@@ -151,6 +152,7 @@ label[for="bt_menu"] {
     width: 95%;
     height: 175px;
     font-family: Georgia;
+    border-radius: 0.3125em;
 }
 
 #bt_menu {
