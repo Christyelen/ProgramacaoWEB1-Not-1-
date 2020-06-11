@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h1>Adicionando novo empregado</h1>
+    <label for="uname"><b>Nome</b></label>
+    <input type="text" placeholder="Nome" name="uname" required>
+
+    <label for="uname"><b>Salario</b></label>
+    <input type="text" placeholder="0,00" name="uname" required>
+
+    <label for="uname"><b>Idade</b></label>
+    <input type="number" placeholder="0" name="uname" required>
+
+    <label for="uname"><b>Avatar</b></label>
+    <input type="text" placeholder="http://url.do.avatar" name="uname" required>
+
+    <button id="btSalvar" class="salvar" onclick="">Salvar</button>
+    
+    <button id="btCancelar" class="cancelar" onclick="">Cancelar</button>
+
+
+    <table id="resultado" class="tabela">
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Salário</th>
+        <th>Idade</th>
+        <th>Avatar</th>
+        <th>Acões</th>
+        
+    </table>
+
+</body>
+</html>
